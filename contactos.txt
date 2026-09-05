@@ -1,0 +1,55 @@
++5493777328741|Hola, probando
++5493777677275|Hola, probando dos
+
+# 📱 ARCHIVO DE CONTACTOS PARA ENVÍO AUTOMATIZADO
+# Formato: numero_telefonico|mensaje
+# 
+# INSTRUCCIONES:
+# 1. Cada línea es un SMS diferente
+# 2. Formato: +34123456789|Hola, este es tu mensaje
+# 3. El número puede ser: +34123456789 o 34123456789 o 123456789
+# 4. El mensaje puede tener cualquier contenido (máx 160 caracteres)
+# 5. Las líneas que empiezan con # son comentarios (se ignoran)
+# 6. Las líneas vacías se ignoran
+#
+# EJEMPLO DE USO:
+# Para ejecutar el envío automático:
+#   python enviar_desde_archivo.py
+#
+# El programa va a:
+# 1. Leer este archivo
+# 2. Preguntar por una pausa entre mensajes
+# 3. Mostrar los mensajes a enviar
+# 4. Pedir confirmación
+# 5. Enviar cada SMS con pausa
+#
+# ============================================
+
+# EJEMPLO 1: Notificaciones simples
++34111111111|Hola! Este es el primer SMS de prueba
++34222222222|Segundo SMS del día
++34333333333|Tercer SMS de bienvenida
+
+# EJEMPLO 2: Mensajes personalizados (descomenta para usar)
+# +34444444444|Hola Juan, esto es un mensaje especial para ti
+# +34555555555|Hola María, aquí va tu notificación
+
+# EJEMPLO 3: Diferentes tipos de mensajes
+# +34666666666|Código de verificación: 123456
+# +34777777777|Tu cita está confirmada para mañana a las 10:00
+# +34888888888|Tu paquete será entregado hoy entre 14:00 y 18:00
+
+# ============================================
+# TU LISTA DE CONTACTOS:
+# (Descomenta y personaliza)
+# ============================================
+
+# Para agregar más contactos, copia y modifica esta línea:
+# +34XXXXXXXXX|Tu mensaje aquí
+
+# NOTAS IMPORTANTES:
+# • Máximo 160 caracteres por mensaje
+# • Si el número comienza con +34, está bien así
+# • Si solo tienes el número sin +34, funciona también (ej: 600123456)
+# • Los caracteres especiales acentos funcionan: áéíóú
+# • Las pausas evitan que se bloquee el servidor SMS
